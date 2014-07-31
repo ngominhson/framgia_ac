@@ -1,0 +1,14 @@
+<div class="center hero-unit">
+  <h1>Program for sending Emails </h1>
+  <span>
+  	<div class="row">
+  		<div class="center hero-unit">	
+    		<%= form_tag excels_import_path, multipart: true do %>  		
+  				<div class="span10"> <%= file_field_tag :file , class: "btn btn-primary" %> </div> 
+  		
+  				<span><%= submit_tag "Import", class: "btn btn-large btn-primary" %></span>
+				<% end %>
+			</div>
+		</div>
+	</span>	
+</div>

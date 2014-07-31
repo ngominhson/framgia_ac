@@ -11,12 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140729041516) do
+ActiveRecord::Schema.define(version: 20140731034916) do
+
+  create_table "excels", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", force: true do |t|
-    t.string   "UID"
     t.string   "name"
     t.string   "email"
+    t.string   "uid"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
