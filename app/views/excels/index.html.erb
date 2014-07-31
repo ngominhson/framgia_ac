@@ -1,0 +1,5 @@
+
+<%= form_tag excels_import_path, multipart: true do %>
+  <td><%= file_field_tag :file %></td>
+  <td><%= submit_tag "Import", class: "btn btn-primary" %></td>
+<% end %>

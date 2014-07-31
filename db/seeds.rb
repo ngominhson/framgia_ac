@@ -5,3 +5,10 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+# (1..148).each do |i|
+#   User.create(name: "user#{i}", email: "user#{i}@gmail.com", uid: "#{i}")
+# end
+
+User.create(name: "hoang cong tuan anh", email: "hoang.cong.tuan.anh@framgia.com", uid: "1")
+User.create(name: "nguyen minh thuan", email: "nguyen.minh.thuan@framgia.com", uid: "2")
+User.create(name: "ngo minh son", email: "ngo.minh.son@framgia.com", uid: "3")
