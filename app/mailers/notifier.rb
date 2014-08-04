@@ -3,8 +3,8 @@ class Notifier < ActionMailer::Base
 
   def sent_mail(user)
     @user = user
-    attachments["out#{user.id}.xls"] = File.read("app/assets/excels/out#{user.id}.xls")
-    mail(to: user.email, subject: 'Imformation about Salary')
+    attachments["#{user.uid}.xls"] = File.read("app/assets/excels/#{user.uid}.xls")
+    mail(to: user.email, subject: "Information about salary")
   end
   
 end
